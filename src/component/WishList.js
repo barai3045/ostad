@@ -8,6 +8,8 @@ import {Fetcher} from "@/swr/Fetcher";
 //const res2 = await fetch("https://dummyjson.com/products", {catch:"no-store"})
 //const res3 = await fetch("https://dummyjson.com/products", {catch:{revalidate:3600}})
 
+//revalidate is working fine in vercel echosystem but may not be work in other echo system
+
 const WishList = () => {
     const { data, error, isLoading } = useSWR("https://dummyjson.com/products", Fetcher)
 
