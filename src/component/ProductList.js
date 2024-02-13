@@ -1,9 +1,13 @@
-import React from 'react';
-
-const ProductList = () => {
+async function getData(){
+    const res = await fetch("https://dummyjson.com/products")
+    const data = await res.json()
+    return data;
+}
+const ProductList = async () => {
+    let data = await getData()
     return (
         <div>
-            <h1> This is code fro dev branch</h1>
+            {JSON.stringify(data)}
         </div>
     );
 };
