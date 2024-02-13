@@ -1,9 +1,9 @@
 "use client"
 
-const Demo = () => {
+const Demo = (props) => {
     return (
         <div>
-            
+            {JSON.stringify(props.data)}
         </div>
     );
 };
