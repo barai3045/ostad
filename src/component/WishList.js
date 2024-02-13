@@ -3,6 +3,11 @@ import useSWR from "swr";
 import {Fetcher} from "@/swr/Fetcher";
 
 
+//catching & revalidating
+//const res1 = await fetch("https://dummyjson.com/products", {catch:"force-cache"})
+//const res2 = await fetch("https://dummyjson.com/products", {catch:"no-store"})
+//const res3 = await fetch("https://dummyjson.com/products", {catch:{revalidate:3600}})
+
 const WishList = () => {
     const { data, error, isLoading } = useSWR("https://dummyjson.com/products", Fetcher)
 
