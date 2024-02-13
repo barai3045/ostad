@@ -4,7 +4,7 @@ import {Fetcher} from "@/swr/Fetcher";
 
 
 const WishList = () => {
-    const { data, error, isLoading } = useSWR("api/user", Fetcher)
+    const { data, error, isLoading } = useSWR("https://dummyjson.com/products", Fetcher)
 
     if (error) return <div>failed to load</div>
     if (isLoading) return <div>loading...</div>
