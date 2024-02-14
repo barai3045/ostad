@@ -1,9 +1,9 @@
 import React from 'react';
+
 const Page = () => {
     return (
         <div>
-            <h1>Home Page</h1>
-
+            <h1>Product</h1>
         </div>
     );
 };
