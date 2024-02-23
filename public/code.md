@@ -30,3 +30,15 @@ const Page = async () => {
     );
 };
 `
+
+
+#### header setting
+`
+const nextConfig = {
+async headers(){
+return [
+{source:"/:path*", headers:[{key:'app-auth-key', value:'123XYZ'}]}
+]
+}
+};
+`

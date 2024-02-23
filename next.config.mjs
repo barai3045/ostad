@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    env: {
-        API_KEY:"XYZ-123-ABC"
+    async headers(){
+        return [
+            {source:"/:path*", headers:[{key:'app-auth-key', value:'123XYZ'}]}
+        ]
     }
 };
 
