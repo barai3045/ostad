@@ -20,8 +20,8 @@ API_KEY:"XYZ-123-ABC"
 }`
 
 #### in page 
-`const Page = async () => {
-
+`
+const Page = async () => {
     return (
         <div>
            <h1>Home page</h1>
