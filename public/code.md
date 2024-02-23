@@ -1,7 +1,12 @@
 ## base path
 for changing base path
-
+#### root directory
 `const nextConfig = {
     basePath:"/"
 };
-` for root directory
+` 
+#### for changing root directory
+`const nextConfig = {
+basePath:"/subfolder"
+};
+` 
