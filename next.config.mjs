@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath:"/"
+    env: {
+        API_KEY:"XYZ-123-ABC"
+    }
 };
 
 export default nextConfig;
